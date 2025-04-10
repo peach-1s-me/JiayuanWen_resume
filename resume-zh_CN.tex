@@ -1,0 +1,118 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !Mode:: "TeX:UTF-8"
+
+\documentclass{resume}
+\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+\usepackage{linespacing_fix} % disable extra space before next section
+\usepackage{cite}
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\name{文佳源}
+
+% {E-mail}{mobilephone}{homepage}
+% be careful of _ in emaill address
+\contactInfo{(+86) 136-6810-0193}{648137125@qq.com}{嵌入式软件开发}{GitHub @peach-1s-me}
+% {E-mail}{mobilephone}
+% keep the last empty braces!
+%\contactInfo{xxx@yuanbin.me}{(+86) 131-221-87xxx}{}
+ 
+\section{个人总结}
+本人在校成绩优秀、乐观积极，对待工作认真负责、自我驱动力强、热爱尝试新事物。有牢固的专业基础知识和良好的编码习惯，善于团队合作，了解软件工程的基本理论和实践方法。在校期间长期从事嵌入式系统及其应用的相关研究，对嵌入式技术和其工程化解决方案有浓厚兴趣。\textbf{现就读于电子科技大学。}
+
+% \section{\faGraduationCap\ 教育背景}
+\section{教育背景}
+\datedsubsection{\textbf{电子科技大学},软件工程,\textit{在读硕士研究生}}{2023.9 - 2026.6}
+\ \textbf{嵌入式智能计算实验室}，研究方向\textbf{实时操作系统}，GPA 3.8/4.0，课程：\textbf{矩阵理论、图论、高级软件工程}等
+\datedsubsection{\textbf{电子科技大学},软件工程,\textit{工学学士}}{2018.9 - 2022.6}
+\ 专业方向\textbf{嵌入式系统}，CET-6，GPA 3.7/4.0，课程：\textbf{嵌入式操作系统、arm体系结构、微机接口技术}等
+
+% \section{\faCogs\ IT 技能}
+\section{技术能力}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.2ex]
+  \item \textbf{编程语言和工具}: C/asm, keil/eclipse/GCC/openocd/shell/Git/Makefile/CMake
+\end{itemize}
+
+% \end{itemize}
+
+\section{实习经历}
+\datedsubsection{\textbf{深圳大疆创新有限公司 | 车载部门}, 嵌入式实习生}{2021.1-2021.7}
+\begin{itemize}
+  \item 参与开发调试工具的维护，优化Makefile脚本和RTOS的shell功能支持
+  \item 负责部分单元测试，完成部分模块的单元测试（白盒/黑盒）用例设计和执行测试
+  \item 负责ADC驱动开发，完成裸机寄存器到RTOS驱动的开发适配
+\end{itemize}
+
+% \begin{onehalfspacing}
+% \end{onehalfspacing}
+
+% \datedsubsection{\textbf{DID-ACTE} 荷兰莱顿}{2015年}
+% \role{本科毕业设计}{LIACS 交换生}
+% 利用结巴分词对中国古文进行分词与词性标注，用已有领域知识训练形成 classifier 并对结果进行调优
+% \begin{onehalfspacing}
+% \begin{itemize}
+%   \item 利用结巴分词对中国古文进行分词与词性标注
+%   \item 利用已有领域知识训练形成 classifier, 并用分词结果进行测试反馈
+%   \item 尝试不同规则，对 classifier 进行调优
+% \end{itemize}
+% \end{onehalfspacing}
+
+\section{参与项目}
+% increase linespacing [parsep=0.5ex]
+% \datedsubsection{\textbf{项目名称}，\small{独立开发/参与开发/文档编写}}{2021.3-   \textbf{至今}}
+% 介绍，链接
+% \begin{itemize}
+%     \item aaa
+% \end{itemize}
+\datedsubsection{\textbf{CatOS嵌入式操作系统}，{\normalsize 独立开发}}{2021.3 -\enspace\textbf{至今}}
+\datedline{一个简单的嵌入式实时操作系统}{https://github.com/peach-1s-me/CatOS}
+\begin{itemize}
+    \item 基于优先级调度，支持同优先级任务时间片轮转，包含简单的设备框架、动态内存管理和shell
+    \item 任务间支持信号量、互斥量以及消息队列形式的同步和通信方式，提供多等级日志输出和移植接口
+    \item 支持位图结构、差分链表、环形缓冲区等数据结构和操作，提高效率，便于内核扩展和应用开发
+\end{itemize}
+
+\datedsubsection{\textbf{珊瑚aCoral操作系统}，{\normalsize 参与开发}}{2023.6 -\enspace\textbf{至今}}
+\datedline{电子科技大学嵌入式智能实验室开发的实时操作系统}{https://github.com/EIC-UESTC/aCoral}
+\begin{itemize}
+    \item 作为项目负责人，负责开发和维护多核主版本操作系统，制定代码规范和git提交流程等
+    \item 实现多核EDF调度算法、基于Cortex-A9平台开发MMU内存映射、LWIP适配以及重构大部分代码
+\end{itemize}
+
+\datedsubsection{\textbf{自动贩卖咖啡机}，{\normalsize 参与开发}}{2024.3 - 2024.4}
+\datedline{小程序下单自动贩卖咖啡机}{}
+\begin{itemize}
+    \item 负责开发嵌入式通信部分，搭建和接入阿里云mqtt服务器，利用cJSON封装和解析json数据
+    \item 系统实现小程序下单后订单数据通过服务器发送到咖啡机，解析咖啡类型、胶囊坐标等信息
+\end{itemize}
+
+\datedsubsection{\textbf{文件传输软件}，{\normalsize 独立开发}}{2020.11 - 2020.12}
+\datedline{linux下的加密文件传输软件}{https://github.com/peach-1s-me/opensslTransmit}
+\begin{itemize}
+    \item 实现文件收发客户端，使用openSSL库的完成传输过程的加密，并使用QT实现GUI界面
+\end{itemize}
+
+\datedsubsection{\textbf{机房监控系统}，{\normalsize 参与开发}}{2019.11 - 2019.12}
+\datedline{基于树莓派实现一个机房监控系统}{}
+\begin{itemize}
+    \item 作为组长，负责嵌入式端图像数据推流以及rtmp服务器搭建
+    \item 系统实现嵌入式端采集图像和传感器数据，客户端从服务器获取数据并展示，支持异常报警
+    
+\end{itemize}
+
+\section{竞赛获奖}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.2ex]
+%   \item LeetCodeOJ Solutions, \textit{https://github.com/hijiangtao/LeetCodeOJ}
+  \item 第十九届“挑战杯”全国大学生课外学术科技作品竞赛\textbf{全国特等奖}，2024年11月
+\end{itemize}
+
+%% Reference
+%\newpage
+%\bibliographystyle{IEEETran}
+%\bibliography{mycite}
+\end{document}
