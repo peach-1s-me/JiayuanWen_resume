@@ -42,9 +42,9 @@
 \section{实习经历}
 \datedsubsection{\textbf{深圳大疆创新有限公司 | 车载部门}, 嵌入式实习生}{2021.1-2021.7}
 \begin{itemize}
-  \item 参与开发调试工具的维护，优化Makefile脚本和RTOS的shell功能支持
-  \item 负责部分单元测试，完成部分模块的单元测试（白盒/黑盒）用例设计和执行测试
-  \item 负责ADC驱动开发，完成裸机寄存器到RTOS驱动的开发适配
+  \item 参与开发调试工具的维护，优化Makefile脚本和RTOS的shell功能，设计实现CPU使用率统计
+  \item 负责部分单元测试，针对车规需求完成部分模块的单元测试（白盒/黑盒）用例设计和执行测试
+  \item 负责ADC驱动开发，实现MCU端电压数据采集，完成裸机寄存器到RTOS驱动框架的开发适配
 \end{itemize}
 
 % \begin{onehalfspacing}
@@ -68,20 +68,26 @@
 % \begin{itemize}
 %     \item aaa
 % \end{itemize}
-\datedsubsection{\textbf{CatOS嵌入式操作系统}，{\normalsize 独立开发}}{2021.3 -\enspace\textbf{至今}}
-\datedline{一个简单的嵌入式实时操作系统}{https://github.com/peach-1s-me/CatOS}
-\begin{itemize}
-    \item 基于优先级调度，支持同优先级任务时间片轮转，包含简单的设备框架、动态内存管理和shell
-    \item 任务间支持信号量、互斥量以及消息队列形式的同步和通信方式，提供多等级日志输出和移植接口
-    \item 支持位图结构、差分链表、环形缓冲区等数据结构和操作，提高效率，便于内核扩展和应用开发
-\end{itemize}
-
 \datedsubsection{\textbf{珊瑚aCoral操作系统}，{\normalsize 参与开发}}{2023.6 -\enspace\textbf{至今}}
 \datedline{电子科技大学嵌入式智能实验室开发的实时操作系统}{https://github.com/EIC-UESTC/aCoral}
 \begin{itemize}
     \item 作为项目负责人，负责开发和维护多核主版本操作系统，制定代码规范和git提交流程等
-    \item 实现多核EDF调度算法、基于Cortex-A9平台开发MMU内存映射、LWIP适配以及重构大部分代码
+    \item 实现多核EDF调度算法、基于Cortex-A9平台开发MMU内存映射、LWIP适配以及完成代码重构
 \end{itemize}
+
+\datedsubsection{\textbf{CatOS嵌入式操作系统}，{\normalsize 独立开发}}{2021.3 -\enspace\textbf{至今}}
+\datedline{一个简单的嵌入式实时操作系统}{https://github.com/peach-1s-me/CatOS}
+\begin{itemize}
+    \item 基于优先级调度，任务间支持信号量、互斥量以及消息队列，实现优先级继承解决优先级反转问题
+    \item 内核提供可移植接口，包含简单的设备驱动框架、动态内存管理和shell，提供多等级日志输出功能
+    \item 支持位图结构、差分链表、环形缓冲区等数据结构和操作，提高效率，便于内核扩展和应用开发
+\end{itemize}
+
+% \datedsubsection{\textbf{基于 CatOS 的平衡小车}，{\normalsize 独立开发}}{2025.4 - 2025.4}
+% \datedline{基于 CatOS 操作系统的平衡小车}{https://github.com/peach-1s-me/BalanceCar}
+% \begin{itemize}
+%     \item 将系统功能划分为传感器采集、电机控制和显示三个任务，利用信号量等机制完成多任务的协同
+% \end{itemize}
 
 \datedsubsection{\textbf{自动贩卖咖啡机}，{\normalsize 参与开发}}{2024.3 - 2024.4}
 \datedline{小程序下单自动贩卖咖啡机}{}
@@ -93,13 +99,13 @@
 \datedsubsection{\textbf{文件传输软件}，{\normalsize 独立开发}}{2020.11 - 2020.12}
 \datedline{linux下的加密文件传输软件}{https://github.com/peach-1s-me/opensslTransmit}
 \begin{itemize}
-    \item 实现文件收发客户端，使用openSSL库的完成传输过程的加密，并使用QT实现GUI界面
+    \item 实现文件收发客户端，使用openSSL库的完成TCP传输过程的加密，并使用QT实现GUI界面
 \end{itemize}
 
 \datedsubsection{\textbf{机房监控系统}，{\normalsize 参与开发}}{2019.11 - 2019.12}
 \datedline{基于树莓派实现一个机房监控系统}{}
 \begin{itemize}
-    \item 作为组长，负责嵌入式端图像数据推流以及rtmp服务器搭建
+    \item 作为组长，负责嵌入式端摄像头图像数据采集、推流以及基于nginx搭建rtmp服务器
     \item 系统实现嵌入式端采集图像和传感器数据，客户端从服务器获取数据并展示，支持异常报警
     
 \end{itemize}
