@@ -41,7 +41,7 @@
 
 ```
 珊瑚 aCoral 操作系统 参与开发 2023.6-至今
-电子科技大学嵌入式智能实验室开发的实时操作系统 https://github.com/EIC-UESTC/aCoral
+电子科技大学嵌入式智能计算实验室开发的实时操作系统 https://github.com/EIC-UESTC/aCoral
 1. 作为项目负责人，负责开发和维护多核主版本操作系统，制定代码规范和 git 提交流程等
 2. 实现多核 EDF 调度算法、基于 Cortex-A9 平台开发 MMU 内存映射、 LWIP 适配以及重构大部分代码
 ```
